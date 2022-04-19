@@ -1,0 +1,31 @@
+{
+  "changelogDate": "20220418192206",
+  "fields": [
+    {
+      "fieldName": "total",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Long"
+    }
+  ],
+  "name": "Orders",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "product_id",
+      "otherEntityName": "products",
+      "relationshipName": "products",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "y",
+      "otherEntityName": "people",
+      "relationshipName": "people",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
